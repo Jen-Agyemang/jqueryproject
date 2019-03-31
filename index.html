@@ -1,0 +1,92 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+    <!-- <script src="main.js"></script> -->
+    <link
+      href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-u1.css"
+      rel="stylesheet"
+    />
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <style>
+      #dragg {
+        width: 80px;
+        height: 80px;
+        padding: 0.5em;
+        background: maroon;
+      }
+      #dragg:hover {
+        background-color: sandybrown;
+      }
+      #p1 {
+        color: violet;
+      }
+      #p1:hover {
+        color: whitesmoke;
+      }
+
+      #dragg2 {
+        width: 80px;
+        height: 80px;
+        padding: 0.5em;
+        background: goldenrod;
+      }
+      #dragg2:hover {
+        background-color: teal;
+      }
+
+      #p2 {
+        color: blue;
+      }
+
+      #p2:hover {
+        color: navajowhite;
+      }
+      #dragg3 {
+        width: 80px;
+        height: 80px;
+        padding: 0.5em;
+        background: green;
+      }
+      #dragg3:hover {
+        background-color: black;
+      }
+      #p3 {
+        color: gray;
+      }
+      #p3:hover {
+        color: lightsteelblue;
+      }
+    </style>
+    <script>
+      $(function() {
+        $("#dragg").draggable();
+      });
+
+      $(function() {
+        $("#dragg2").draggable();
+      });
+      $(function() {
+        $("dragg3").draggable();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="dragg" class="ui-widget-content">
+      <p id="p1">Feel free to drag me around.</p>
+    </div>
+    <div id="dragg2" class="ui-widget-content">
+      <p id="p2">me please.</p>
+    </div>
+    <div id="dragg3" class="ui-widget-content">
+      <p id="p3">
+        I can't be dragged, sorry.
+      </p>
+    </div>
+  </body>
+</html>
